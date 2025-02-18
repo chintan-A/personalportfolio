@@ -10,6 +10,6 @@ This is a fully responsive personal portfolio website built using **HTML, CSS, a
 ### 1️⃣ Clone the Repository
 First, download or clone the project to your local machine:
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/chintan-A/personalportfolio.git
 cd your-portfolio
 
