@@ -6,16 +6,12 @@
 }
 
 body{
-<<<<<<< HEAD
   background: #0F172A;
   background-image: 
     radial-gradient(at 40% 20%, rgba(61, 65, 218, 0.15) 0px, transparent 50%),
     radial-gradient(at 80% 0%, rgba(236, 72, 153, 0.1) 0px, transparent 50%),
     radial-gradient(at 0% 50%, rgba(37, 99, 235, 0.1) 0px, transparent 50%);
   background-attachment: fixed;
-=======
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
->>>>>>> bdb85b4adc983a01b4b958864f314c336a702201
   color: #fff;
 }
 html{
@@ -991,23 +987,14 @@ nav .fas{
   top: 0;
   left: 0;
   z-index: -1;
-<<<<<<< HEAD
   opacity: 0.4;
-=======
->>>>>>> bdb85b4adc983a01b4b958864f314c336a702201
 }
 
 /* Glass effect */
 .glass-effect {
-<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.05);
-=======
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
->>>>>>> bdb85b4adc983a01b4b958864f314c336a702201
   border-radius: 15px;
 }
 
@@ -1491,11 +1478,7 @@ html {
   bottom: 30px;
   right: 30px;
   background: rgba(255, 255, 255, 0.95);
-<<<<<<< HEAD
   padding: 15px 25px;
-=======
-  padding: 15px;
->>>>>>> bdb85b4adc983a01b4b958864f314c336a702201
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -1510,7 +1493,6 @@ html {
 }
 
 .experience-badge .years {
-<<<<<<< HEAD
   font-size: 28px;
   font-weight: 700;
   color: #ff004f;
@@ -1523,18 +1505,6 @@ html {
   color: #333;
   line-height: 1.4;
   font-weight: 500;
-=======
-  font-size: 24px;
-  font-weight: 700;
-  color: #ff004f;
-  display: block;
-}
-
-.experience-badge .text {
-  font-size: 12px;
-  color: #333;
-  line-height: 1.2;
->>>>>>> bdb85b4adc983a01b4b958864f314c336a702201
 }
 
 .sub-title {
