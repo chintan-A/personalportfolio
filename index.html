@@ -10,9 +10,10 @@
 </head>
 
 <body>
+  <div id="particles-js"></div>
 
   <div id="header">
-    <div class="container">
+    <div class="container glass-effect">
       <nav>
         <img src="images/Chintan_logo_small.png " class="logo">
         <ul id="sidemenu">
@@ -26,51 +27,122 @@
         <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
-        <p>Frontend Web Development</p>
-        <h1>Hi I'm <span>Chintan</span> <br> Shah From India</h1>
+        <p class="typing-text">Frontend Web Development</p>
+        <h1>Hi I'm <span class="highlight">Chintan</span> <br> Shah From India</h1>
+        <div class="cta-buttons">
+          <a href="#portfolio" class="btn primary-btn">
+            View My Work <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn secondary-btn">
+            Contact Me <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
   <!-- -------------------About---------------------->
   <div id="about">
-    <div class="container">
+    <div class="container glass-effect">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/images.jpeg" alt="">
+          <div class="profile-container">
+            <img src="images/background_image.png" alt="Profile Image">
+            <div class="profile-overlay"></div>
+            <div class="experience-badge">
+              <span class="years">2+</span>
+              <span class="text">Years<br>Experience</span>
+            </div>
+          </div>
         </div>
         <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>Hi, I'm Shah Chintan! A passionate software developer with a flair for creating efficient and user-friendly
-            web.
-          </p>
-          <div class="tab-titles active-link">
-            <p class="tab-links active-link" onclick="opentabs('skills')">Skills</p>
-            <p class="tab-links" onclick="opentabs('experiences')">Experiences</p>
-            <p class="tab-links" onclick="opentabs('education')">Education</p>
-          </div>
+          <h1 class="sub-title">About <span class="highlight">Me</span></h1>
+          <div class="about-content">
+            <p class="about-text">A passionate Frontend Developer based in Gujarat, India 📍</p>
+            <div class="about-description">
+              As a Frontend Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques.
+            </div>
 
-          <div class="tab-content active-tab" id="skills">
-            <ul>
-              <li><span>Web Development</span><br>Web app Development</li>
-              <li><span>Frameworks and Libraries</span><br>Bootstrap,CSS</li>
-              <li><span>Languages</span><br>HTML, CSS, JavaScript (ES6+)</li>
-            </ul>
-          </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentabs('skills', event)">
+                <i class="fas fa-laptop-code"></i> Skills
+              </p>
+              <p class="tab-links" onclick="opentabs('experiences', event)">
+                <i class="fas fa-briefcase"></i> Experience
+              </p>
+              <p class="tab-links" onclick="opentabs('education', event)">
+                <i class="fas fa-graduation-cap"></i> Education
+              </p>
+            </div>
 
-          <div class="tab-content" id="experiences">
-            <ul>
-              <li><span> 5/12/2024 - 5/01/2025</span><br> Frontend Web Development Intern at MotionCut</li>
-              <li><span> 3/06/2024 - 15/08/2024</span><br> Frontend Developer Intern at Dominant Infotech</li>
-              <li><span> 15/01/2024 - 4/05/2024</span><br>Trainee Employed in Flutter App Development Intern at
-                DUMAInfoservices Pvt Ltd</li>
-            </ul>
-          </div>
+            <div class="tab-contents">
+              <div class="tab-content active-tab" id="skills">
+                <div class="skills-container">
+                  <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                      <span class="skill-item">HTML5</span>
+                      <span class="skill-item">CSS3</span>
+                      <span class="skill-item">JavaScript</span>
+                      <span class="skill-item">React.js</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                      <span class="skill-item">Git</span>
+                      <span class="skill-item">VS Code</span>
+                      <span class="skill-item">Figma</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="tab-content" id="education">
-            <ul>
-              <li><span> 2021-2024</span><br> B.Tech in Computer Engineering From BAIT Surat,Gujarat.</li>
-              <li><span> 2018-2021</span><br> Diploma in Chemical Engineering From N.G.P.P, Isroli, Gujarat</li>
-            </ul>
+              <div class="tab-content" id="experiences">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <h3>Frontend Developer Intern</h3>
+                      <p class="company">MotionCut</p>
+                      <p class="date">Dec 2024 - Jan 2025</p>
+                      <p class="description">Working on various web development projects using modern technologies.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <h3>Team Lead</h3>
+                      <p class="company">Technical Club</p>
+                      <p class="date">2022 - 2024</p>
+                      <p class="description">Led team projects and organized technical events.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-content" id="education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <h3>BE in Computer Engineering</h3>
+                      <p class="institute">Gujarat Technological University</p>
+                      <p class="date">2020 - 2024</p>
+                      <p class="description">Specialization in Computer Science & Engineering</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <h3>Higher Secondary Education</h3>
+                      <p class="institute">Gujarat Board</p>
+                      <p class="date">2020</p>
+                      <p class="description">Science Stream with Computer Science</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -79,28 +151,49 @@
 
   <!----------- Services ------------>
   <div id="services">
-    <div class="container">
+    <div class="container glass-effect">
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius neque vel veritatis mollitia minima. Omnis saepe, culpa unde praesentium assumenda delectus illum deleniti soluta autem sit nam, itaque labore! Veniam.</p>
-          <a href="#">Learn more</a>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h2>Web Development</h2>
+          <p>Creating responsive and dynamic websites using modern technologies and best practices. Focused on delivering seamless user experiences.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Responsive Design</span>
+            <span><i class="fas fa-check"></i> Modern UI/UX</span>
+            <span><i class="fas fa-check"></i> Performance Optimization</span>
+          </div>
+          <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
 
-        <div>
-          <i class="fa-brands fa-app-store"></i>
-          <h2>App Design</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius neque vel veritatis mollitia minima. Omnis saepe, culpa unde praesentium assumenda delectus illum deleniti soluta autem sit nam, itaque labore! Veniam.</p>
-          <a href="#">Learn more</a>
-        </div>
-
-        <div>
-          <i class="fa-sharp fa-solid fa-crop-simple"></i>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-crop-alt"></i>
+          </div>
           <h2>UI/UX Design</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius neque vel veritatis mollitia minima. Omnis saepe, culpa unde praesentium assumenda delectus illum deleniti soluta autem sit nam, itaque labore! Veniam.</p>
-          <a href="#">Learn more</a>
+          <p>Crafting intuitive and visually appealing interfaces that enhance user engagement and satisfaction.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> User Research</span>
+            <span><i class="fas fa-check"></i> Wireframing</span>
+            <span><i class="fas fa-check"></i> Prototype Development</span>
+          </div>
+          <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h2>App Development</h2>
+          <p>Building cross-platform mobile applications with modern frameworks and native features integration.</p>
+          <div class="service-features">
+            <span><i class="fas fa-check"></i> Cross-Platform</span>
+            <span><i class="fas fa-check"></i> Native Features</span>
+            <span><i class="fas fa-check"></i> Performance Focused</span>
+          </div>
+          <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -136,40 +229,66 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn">See more</a>
+      <a href="#" class="btn see-more">
+        See More <i class="fas fa-plus"></i>
+      </a>
     </div>
   </div>
-<!-----------Contact Form------------->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-titles">Contact Me</h1>
-        <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
-        <p><i class="fa-solid fa-phone"></i>0123456789</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/chintanshah29/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100077841849557"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/chintan2373/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://github.com/chintan-A"><i class="fa-brands fa-github"></i></a>
+
+  <!-----------Contact Form------------->
+  <div id="contact">
+    <div class="container glass-effect">
+      <h1 class="sub-title">Get In Touch</h1>
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-titles">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fa-solid fa-phone"></i>0123456789</p>
+          <p><i class="fas fa-location-dot"></i>Surat, Gujarat, India</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/chintanshah29/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100077841849557"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/chintan2373/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/chintan-A"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/Chintan_CV.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <a href="images/Chintan_CV.pdf" download class="btn btn2">Download CV</a>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" class="contact-form">
+            <div class="input-group">
+              <input type="text" name="Name" required>
+              <label>Your Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" name="Email" required>
+              <label>Your Email</label>
+            </div>
+            <div class="input-group">
+              <textarea name="Message" rows="6" required></textarea>
+              <label>Your Message</label>
+            </div>
+            <button type="submit" class="btn btn2 send-message">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
       </div>
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"></span>
+    </div>
+    <div class="copyright">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Copyright © 2024 <span>Chintan Shah</span></p>
+        <p class="footer-tagline">Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
       </div>
     </div>
   </div>
-  <div class="copyright">
-    <p>Copyright © Chintan Shah.</p>
-  </div>
-</div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="particles.js"></script>
   <script src="script.js"></script>
 </body>
 
