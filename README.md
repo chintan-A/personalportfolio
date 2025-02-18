@@ -12,7 +12,7 @@ First, download or clone the project to your local machine:
 ```bash
 git clone https://github.com/chintan-A/personalportfolio.git
 cd your-portfolio
-
+```
 
 2️⃣ Open the Project
 Since this is a static website, no extra setup is needed! Just open the index.html file in your browser.
