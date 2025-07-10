@@ -4,296 +4,287 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>NextGen</title>
+  <!-- Logo -->
+  <link rel="icon" href="./assets/images/bg/logo.png">
+
+  <!-- Fonts Css -->
+  <link rel="stylesheet" href="./assets/fonts/style.css">
+
+  <!-- Customize About Css -->
+  <link rel="stylesheet" href="./assets/css/about.css">
+
+  <!-- Customize Nav Css -->
+  <link rel="stylesheet" href="./assets/css/navbar-hero.css">
+
+  
+
   <script src="https://kit.fontawesome.com/ee329fcc3a.js" crossorigin="anonymous"></script>
+  <style>
+    .highlight::after {
+      content: '|';
+      animation: blink 1s infinite;
+      color: #2600ff;
+      margin-left: 2px;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="particles-js"></div>
-
-  <div id="header">
-    <div class="container glass-effect">
-      <nav>
-        <img src="images/Chintan_logo_small.png " class="logo">
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p class="typing-text">Frontend Web Development</p>
-        <h1>Hi I'm <span class="highlight">Chintan</span> <br> Shah From India</h1>
-        <div class="cta-buttons">
-          <a href="#portfolio" class="btn primary-btn">
-            View My Work <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn secondary-btn">
-            Contact Me <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- -------------------About---------------------->
-  <div id="about">
-    <div class="container glass-effect">
-      <div class="row">
-        <div class="about-col-1">
-          <div class="profile-container">
-            <img src="images/background_image.png" alt="Profile Image">
-            <div class="profile-overlay"></div>
-            <div class="experience-badge">
-
-              <span class="years">0 Year Experience</span>
-              <span class="text">Fresher Frontend Web Developer</span>
-
-            </div>
-          </div>
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About <span class="highlight">Me</span></h1>
-          <div class="about-content">
-            <p class="about-text">A passionate Frontend Developer based in Gujarat, India 📍</p>
-            <div class="about-description">
-              As a Frontend Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques.
-            </div>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentabs('skills', event)">
-                <i class="fas fa-laptop-code"></i> Skills
-              </p>
-              <p class="tab-links" onclick="opentabs('experiences', event)">
-                <i class="fas fa-briefcase"></i> Experience
-              </p>
-              <p class="tab-links" onclick="opentabs('education', event)">
-                <i class="fas fa-graduation-cap"></i> Education
-              </p>
-            </div>
-
-            <div class="tab-contents">
-              <div class="tab-content active-tab" id="skills">
-                <div class="skills-container">
-                  <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                      <span class="skill-item">HTML5</span>
-                      <span class="skill-item">CSS3</span>
-                      <span class="skill-item">JavaScript</span>
-                      <span class="skill-item">React.js</span>
-                    </div>
-                  </div>
-                  <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-items">
-                      <span class="skill-item">Git</span>
-                      <span class="skill-item">VS Code</span>
-                      <span class="skill-item">Figma</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-content" id="experiences">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                      <h3>Frontend Developer Intern</h3>
-                      <p class="company">MotionCut</p>
-                      <p class="date">Dec 2024 - Jan 2025</p>
-                      <p class="description">Working on various web development projects using modern technologies.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                      <h3>Team Lead</h3>
-                      <p class="company">Technical Club</p>
-                      <p class="date">2022 - 2024</p>
-                      <p class="description">Led team projects and organized technical events.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-content" id="education">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                      <h3>BE in Computer Engineering</h3>
-                      <p class="institute">Gujarat Technological University</p>
-                      <p class="date">2020 - 2024</p>
-                      <p class="description">Specialization in Computer Science & Engineering</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                      <h3>Higher Secondary Education</h3>
-                      <p class="institute">Gujarat Board</p>
-                      <p class="date">2020</p>
-                      <p class="description">Science Stream with Computer Science</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!----------- Services ------------>
-  <div id="services">
-    <div class="container glass-effect">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h2>Web Development</h2>
-          <p>Creating responsive and dynamic websites using modern technologies and best practices. Focused on delivering seamless user experiences.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> Responsive Design</span>
-            <span><i class="fas fa-check"></i> Modern UI/UX</span>
-            <span><i class="fas fa-check"></i> Performance Optimization</span>
-          </div>
-          <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-crop-alt"></i>
-          </div>
-          <h2>UI/UX Design</h2>
-          <p>Crafting intuitive and visually appealing interfaces that enhance user engagement and satisfaction.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> User Research</span>
-            <span><i class="fas fa-check"></i> Wireframing</span>
-            <span><i class="fas fa-check"></i> Prototype Development</span>
-          </div>
-          <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <h2>App Development</h2>
-          <p>Building cross-platform mobile applications with modern frameworks and native features integration.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> Cross-Platform</span>
-            <span><i class="fas fa-check"></i> Native Features</span>
-            <span><i class="fas fa-check"></i> Performance Focused</span>
-          </div>
-          <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--------------------Portfolio-------------------->
-  <div id="portfolio">
+  <header class="main-header">
     <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="images/work1.webp"> 
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda, quia molestias laborum sint itaque. </p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <nav class="row items-center main-nav">
+        <span class="logo">NextGen<span class="logo-dot">.</span></span>
+        <ul class="nav-list">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about" >About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm <span class="highlight" id="typewriter"></span></h1>
+          <audio id="typewriter-audio" src="./assets/audio/next.mp3"></audio>
+          <p class="hero-subtitle">
+            <span class="animated-role">Frontend Developer</span> from India
+          </p>
+          <div class="cta-buttons">
+            <a href="#portfolio" class="btn primary-btn">View My Work <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn secondary-btn">Contact Me <i class="fas fa-envelope"></i></a>
           </div>
         </div>
-        <div class="work">
-          <img src="images/work2.webp"> 
-          <div class="layer">
-            <h3>Music App</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda, quia molestias laborum sint itaque. </p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <div class="hero-image">
+          <img src="./assets/images/bg/bg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title" style="display: flex; align-items: center; gap: 12px;">
+        <span style="color: transparent; -webkit-text-stroke: 2px #2600ff; text-stroke: 2px #FFD600; font-weight: 900; font-size: 2.5rem; letter-spacing: 1px;">About Me</span>
+        <span style="flex: 1; height: 2px; background: #e0e0e0; margin-left: 16px;"></span>
+      </h2>
+      <section class="about-section">
+        
+        <div class="about-image">
+          <img src="./assets/images/bg/li.png" alt="Profile Image" id="about-profile-img">
+        </div>
+        <div class="about-content">
+          <h2>HELLO, I AM NextGen.</h2>
+          <div class="subtitle">From NYC, America</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rerum nesciunt esse similique possimus excepturi quam accusantium, maiores minima sapiente, harum distinctio, doloremque sunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rerum nesciunt esse similique.</p>
+          <div class="cta-buttons">
+            <a href="#portfolio" class="btn primary-btn">Read More<i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="about-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
-        <div class="work">
-          <img src="images/work3.webp"> 
-          <div class="layer">
-            <h3>Online Shooping App</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda, quia molestias laborum sint itaque.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </section>
+    </div>
+   
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title" style="display: flex; align-items: center; gap: 12px;">
+        <span style="color: #222222; font-weight: 900; font-size: 2.5rem; letter-spacing: 1px;">MY</span>
+        <span style="color: transparent; -webkit-text-stroke: 2px #2600ff; text-stroke: 2px #FFD600; font-weight: 900; font-size: 2.5rem; letter-spacing: 1px;">SERVICE</span>
+        <span style="flex: 1; height: 2px; background: #e0e0e0; margin-left: 16px;"></span>
+      </h2>
+      <div class="services-grid custom-services-grid">
+        <div class="service-card custom-service">
+          <div class="service-icon-box"><i class="fas fa-code"></i></div>
+          <div class="service-content">
+            <h3>Website Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card custom-service">
+          <div class="service-icon-box"><i class="fas fa-cogs"></i></div>
+          <div class="service-content">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card custom-service">
+          <div class="service-icon-box"><i class="fas fa-mobile-alt"></i></div>
+          <div class="service-content">
+            <h3>App Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card custom-service">
+          <div class="service-icon-box"><i class="fas fa-lock"></i></div>
+          <div class="service-content">
+            <h3>Cyber Security</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card custom-service">
+          <div class="service-icon-box"><i class="fas fa-chart-bar"></i></div>
+          <div class="service-content">
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card custom-service">
+          <div class="service-icon-box"><i class="fas fa-info"></i></div>
+          <div class="service-content">
+            <h3>Other Catagory</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
-      <a href="#" class="btn see-more">
-        See More <i class="fas fa-plus"></i>
-      </a>
     </div>
-  </div>
+  </section>
 
-  <!-----------Contact Form------------->
-  <div id="contact">
-    <div class="container glass-effect">
-      <h1 class="sub-title">Get In Touch</h1>
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-titles">Contact Me</h1>
-
-          <p><i class="fas fa-paper-plane"></i>chintanshah97120@gmail.com</p>
-          <p><i class="fa-solid fa-phone"></i>+91 8905917979</p>
-
-          <p><i class="fas fa-location-dot"></i>Surat, Gujarat, India</p>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/chintanshah29/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100077841849557"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/chintan2373/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/chintan-A"><i class="fa-brands fa-github"></i></a>
-          </div>
-          <a href="images/Chintan_CV.pdf" download class="btn btn2">Download CV</a>
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-title" style="display: flex; align-items: center; gap: 12px;">
+        <span style="color: #222; font-weight: 900; font-size: 2.5rem; letter-spacing: 1px;">MY</span>
+        <span style="color: transparent; -webkit-text-stroke: 2px #2600ff; text-stroke: 2px #FFD600; font-weight: 900; font-size: 2.5rem; letter-spacing: 1px;">Portfolio</span>
+        <span style="flex: 1; height: 2px; background: #e0e0e0; margin-left: 16px;"></span>
+      </h2>
+      <div class="portfolio-filters">
+        <button class="portfolio-filter-btn ">AI Images</button>
+        <!-- <button class="portfolio-filter-btn">Illustration</button>
+        <button class="portfolio-filter-btn">Web Template</button>
+        <button class="portfolio-filter-btn">Business Card</button>
+        <button class="portfolio-filter-btn">Brochure</button> -->
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="./assets/images/bussiness/header.png" alt="Social Media App">
+          <!-- <div class="portfolio-overlay">
+           
+            <a href="#header" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
         </div>
-        <div class="contact-right">
+        <div class="portfolio-card">
+          <img src="./assets/images/bussiness/yoga2.png" alt="Music App">
+          <!-- <div class="portfolio-overlay">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#header" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+       
+        <div class="portfolio-card">
+          <img src="./assets/images/bussiness/yogaai.png" alt="">
+          <!-- <div class="portfolio-overlay">
+            <h3>Yoga Ai Image</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi asperiores praesentium aspernatur sint ullam aperiam libero voluptate.</p>
+            <a href="#header" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+        <div class="portfolio-card">
+          <img src="./assets/images/bussiness/pandaai.png" alt="">
+          <!-- <div class="portfolio-overlay">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#header" class="portfolio-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+        <div class="portfolio-card">
+          <img src="./assets/images/bussiness/ai.jpg" alt="">
+        </div>
+        <div class="portfolio-card">
+          <img src="./assets/images/bussiness/bussiness.png" alt="">
+        </div>
+      </div>
+      <!-- <a href="#" class="btn see-more">See More <i class="fas fa-plus"></i></a> -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <span style="color: transparent; -webkit-text-stroke: 2px #2600ff; text-stroke: 2px #FFD600; font-weight: 900; font-size: 2.5rem; letter-spacing: 1px;">Contact</span>
+        <span style="flex: 1; height: 2px; background: #e0e0e0; margin-left: 16px;"></span>
+      <div class="contact-section">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> nextgen@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 12345678</p>
+          <p><i class="fas fa-map-marker-alt"></i> Next, Gen, Ai</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100077841849557"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-form-container">
           <form name="submit-to-google-sheet" class="contact-form">
-            <div class="input-group">
-              <input type="text" name="Name" required>
-              <label>Your Name</label>
-            </div>
-            <div class="input-group">
-              <input type="email" name="Email" required>
-              <label>Your Email</label>
-            </div>
-            <div class="input-group">
-              <textarea name="Message" rows="6" required></textarea>
-              <label>Your Message</label>
-            </div>
-            <button type="submit" class="btn btn2 send-message">
-              Send Message <i class="fas fa-paper-plane"></i>
-            </button>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2 send-message">Send Message <i class="fas fa-paper-plane"></i></button>
           </form>
           <span id="msg"></span>
         </div>
       </div>
     </div>
-    <div class="copyright">
-      <div class="footer-content">
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <p>Copyright © 2024 <span>Chintan Shah</span></p>
-        <p class="footer-tagline">Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+  </section>
+
+  <footer class="copyright">
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
       </div>
+      <p>Copyright © 2024 <span>NextGen.</span></p>
+      <p class="footer-tagline">Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
     </div>
-  </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="particles.js"></script>
   <script src="script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const text = "NextGen.";
+    const el = document.getElementById("typewriter");
+    const audio = document.getElementById("typewriter-audio");
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 120);
+      } else {
+        // Play sound only if not played before
+        if (!localStorage.getItem("nextgenAudioPlayed")) {
+          audio.play();
+          localStorage.setItem("nextgenAudioPlayed", "true");
+        }
+      }
+    }
+
+    setTimeout(typeWriter, 600);
+  });
+  </script>
 </body>
 
 </html>

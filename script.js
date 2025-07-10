@@ -91,4 +91,55 @@ document.addEventListener('DOMContentLoaded', function() {
     // Show default tab (Skills)
     document.getElementById('skills').classList.add('active-tab');
     document.querySelector('.tab-links').classList.add('active-link');
+
+    // Navbar background on scroll (now only for .main-nav)
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.main-nav');
+      if (window.scrollY > 40) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Highlight nav link for section in view
+    const sectionIds = ['header', 'about', 'services', 'portfolio', 'contact'];
+    const navLinks = document.querySelectorAll('.nav-list li');
+    function setActiveNav() {
+      let found = false;
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sectionIds[i]);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom > 100) {
+            navLinks.forEach(li => li.classList.remove('active'));
+            const activeLi = Array.from(navLinks).find(li => {
+              const a = li.querySelector('a');
+              return a && a.getAttribute('href') === `#${sectionIds[i]}`;
+            });
+            if (activeLi) activeLi.classList.add('active');
+            found = true;
+            break;
+          }
+        }
+      }
+      if (!found) navLinks.forEach(li => li.classList.remove('active'));
+    }
+    window.addEventListener('scroll', setActiveNav);
+    setActiveNav();
+
+    // Animated role text in hero section
+    const roles = ['Designer', 'Full Stack Developer'];
+    let roleIndex = 0;
+    const roleElement = document.querySelector('.animated-role');
+    function updateRole() {
+      if (roleElement) {
+        roleElement.textContent = roles[roleIndex];
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+    }
+    setTimeout(function loopRole() {
+      updateRole();
+      setTimeout(loopRole, 5000);
+    }, 5000);
 });
